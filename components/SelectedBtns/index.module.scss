@@ -1,0 +1,31 @@
+@import "../../style/variables.scss";
+
+.btn {
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    & > button:first-child {
+      margin-right: 8px;
+    }
+  }
+
+  height: 32px;
+  color: $color-black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: 16px;
+  background: $color-bg;
+  padding: 0 12px;
+
+  &.active {
+    height: 28px;
+    background: $color-ambition;
+    color: $color-white;
+    padding: 0 16px;
+  }
+}

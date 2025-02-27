@@ -1,0 +1,15 @@
+.cols {
+  display: flex;
+
+  &-1 {
+    flex: 1;
+  }
+
+  &-between {
+    justify-content: space-between;
+  }
+
+  &-center {
+    align-items: center;
+  }
+}

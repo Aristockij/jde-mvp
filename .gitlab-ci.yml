@@ -1,0 +1,29 @@
+deploy-prod:
+  variables:
+    DEVELOPMENTTYPE: "prod"
+  extends:
+    - .prod-branch-rules  
+  stage: deploy
+  trigger:
+    include: deploy.gitlab-ci.yml
+    strategy: depend
+
+
+deploy-dev:
+  variables:
+    DEVELOPMENTTYPE: "dev"
+  extends:
+    - .dev-branch-rules  
+  stage: deploy
+  trigger:
+    include: deploy.gitlab-ci.yml
+    strategy: depend
+  resource_group: deploy
+
+.dev-branch-rules: 
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "dev"'
+
+.prod-branch-rules:
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "prod"'

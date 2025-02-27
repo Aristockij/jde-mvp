@@ -1,0 +1,7 @@
+name: prod
+services:
+  front:
+    image: front-prod
+    restart: always
+    ports:
+      - "3001:3000"

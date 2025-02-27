@@ -1,0 +1,7 @@
+name: dev
+services:
+  front:
+    image: front-dev
+    restart: always
+    ports:
+      - "3000:3000"

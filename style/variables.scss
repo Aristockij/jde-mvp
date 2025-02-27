@@ -1,0 +1,44 @@
+// COLORS
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #e3e2e4;
+$color-gray-light: #fbfbfb;
+$color-gray-focus: #f0f0f0;
+
+$color-bg: #f7eddc;
+$color-ambition: #9f472f;
+$color-latte: #d2b991;
+$color-direction: #6b7b43;
+$color-green: #849fa4;
+$color-darkgreen: #2a5861;
+$color-tea: #849fa3;
+
+$color-btn-brown: #a66760;
+$color-btn-pink: #f87e7f;
+$color-btn-grey: #cc902c;
+$color-btn-purple: #9f52a1;
+$color-btn-green: #2a5861;
+$color-btn-blue: #555ab1;
+
+$text__black: #3e3930;
+
+$focus__btn: #2a5861;
+
+// FONTS
+$font-name: "PTRootUI", Arial, sans-serif;
+
+// TRANSITIONS
+$transition-duration: 0.35s;
+$transition-timing-function: ease;
+$transition: $transition-duration $transition-timing-function;
+
+// SETTINGS
+$desktop-xxl: 2560;
+$desktop-xl: 1920;
+$desktop-lg: 1680;
+$desktop-md: 1440;
+$desktop-sm: 1366;
+$desktop-xs: 1280;
+$desktop: 1024;
+$tablet: 1024;
+$mobile: 800;

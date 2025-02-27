@@ -1,0 +1,56 @@
+@mixin hover-action {
+  transition: 0.3s;
+  cursor: pointer;
+
+  @media (hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin hoverMixin($color, $fontColor: null) {
+  transition: 0.3s;
+  cursor: pointer;
+
+  @media (hover) {
+    &:hover {
+      @if $fontColor {
+        color: $fontColor;
+      }
+      background: $color;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @if $fontColor {
+        color: $fontColor;
+      }
+      background: $color;
+    }
+  }
+}
+
+@mixin hoverOpacity {
+  transition: 0.3s;
+  cursor: pointer;
+
+  @media (hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}

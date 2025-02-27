@@ -1,0 +1,17 @@
+@mixin fontContent-roboto($size: 32px, $weight: 700) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: var(--roboto-condensed);
+}
+
+@mixin fontContent-helvetica($size: 14px, $weight: 400) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: var(--helvetica-neue);
+}
+
+@mixin fontContent-neue-cyr($size: 32px, $weight: 700) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: var(--helvetica-neue-cyr);
+}

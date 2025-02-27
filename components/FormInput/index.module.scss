@@ -1,0 +1,19 @@
+.form__content {
+  width: 100%;
+  label {
+    display: block;
+    margin-bottom: 9px;
+  }
+  input {
+    width: 100%;
+  }
+
+  input[type="date"] {
+    &::-webkit-calendar-picker-indicator {
+      color: transparent;
+      opacity: 1;
+      background: url("../../public/icons/calendar.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+}

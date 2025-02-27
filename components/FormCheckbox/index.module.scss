@@ -1,0 +1,36 @@
+@import "../../style/variables.scss";
+@import "../../style/mixins.scss";
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.checkbox {
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    input {
+      display: none;
+      opacity: 0;
+    }
+
+    input:checked ~ span {
+      background: url("../../public/icons/checkbox.svg");
+      background-size: 117%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &__custom {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid rgb(143, 143, 143);
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+}

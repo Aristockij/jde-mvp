@@ -1,0 +1,24 @@
+stages:
+  - build
+  - deploy              
+  - clean
+
+build-job:
+  stage: build
+  script:
+    - "docker build -t front-$DEVELOPMENTTYPE -f ./Dockerfile-$DEVELOPMENTTYPE ."
+
+deploy-job: 
+  stage: deploy
+  script:
+    - "docker compose -f docker-compose-$DEVELOPMENTTYPE.yaml up -d"
+
+clean-docker-job:
+  stage: clean  
+  script:
+    - "docker image prune -f"
+    - "docker builder prune -f"
+
+default:
+  tags:
+    - "project@jdesrv.srv1.spaaace.io"

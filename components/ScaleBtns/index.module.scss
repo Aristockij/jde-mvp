@@ -1,0 +1,92 @@
+@import "../../style/variables.scss";
+
+.btn {
+  &__wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    background-color: $color-gray-light;
+    padding-top: 10px;
+    height: 92px;
+
+    button {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      * {
+        width: 100%;
+      }
+
+      &.inactive {
+        opacity: 0.7;
+      }
+      &.active {
+        background: $color-gray-focus;
+      }
+
+      &:nth-child(1) .btn__rect {
+        background-color: $color-btn-brown;
+      }
+      &:nth-child(2) .btn__rect {
+        background-color: $color-btn-pink;
+      }
+      &:nth-child(3) .btn__rect {
+        background-color: $color-btn-grey;
+      }
+      &:nth-child(4) .btn__rect {
+        background-color: $color-btn-purple;
+      }
+      &:nth-child(5) .btn__rect {
+        background-color: $color-btn-green;
+      }
+      &:nth-child(6) .btn__rect {
+        background-color: $color-btn-blue;
+      }
+      &:nth-child(7) .btn__rect {
+        background-color: $color-btn-green;
+      }
+      &:nth-child(8) .btn__rect {
+        background-color: $color-btn-purple;
+      }
+      &:nth-child(9) .btn__rect {
+        background-color: $color-btn-grey;
+      }
+      &:nth-child(10) .btn__rect {
+        background-color: $color-btn-pink;
+      }
+      &:nth-child(11) .btn__rect {
+        background-color: $color-btn-brown;
+      }
+    }
+  }
+
+  &__rect {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-bg;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    font-size: 14px;
+    opacity: 0.7;
+    text-align: center;
+  }
+}
+
+.btns {
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+    span {
+      font-weight: 400;
+    }
+  }
+}

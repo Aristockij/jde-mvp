@@ -1,0 +1,51 @@
+.wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 20px;
+
+  background: url("../../public/images/paper_top.svg");
+  background-position: bottom;
+}
+.left {
+  height: 100%;
+  width: 20px;
+  left: 0;
+  top: 0;
+  position: absolute;
+
+  background: url("../../public/images/paper_left.svg");
+  background-position: right;
+  background-size: 100%;
+}
+.bottom {
+  height: 25px;
+  width: 100%;
+  left: 0;
+  bottom: -4px;
+  position: absolute;
+
+  background: url("../../public/images/paper_bottom.svg");
+  background-position: top;
+  background-size: 100%;
+}
+.right {
+  height: 100%;
+  width: 20px;
+  right: 0;
+  top: 0;
+  position: absolute;
+
+  background: url("../../public/images/paper_right.svg");
+  background-position: center;
+  background-size: 100%;
+}
